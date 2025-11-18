@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parte-1-Tailwind</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="flex itens-center justify-between p-[15px]">
+      <div class="text-4xl text-violet-600">
+        <i id="logo" class="fa-solid fa-meteor"></i>
+      </div>
+      <!-- Cor do meteor #4F47E6 -->
+      <nav class="text-[17px] flex gap-[60px] font-medium">
+        <a href="">Product</a>
+        <a href="">Features</a>
+        <a href="">marketplace</a>
+        <a href="">Company</a>
+      </nav>
+      <div class="log-in">
+        <a class="text-[18px] font-medium" href="">Log In</a>
+        <i id="seta" class="fa-solid fa-arrow-right text-[12px]"></i>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <p
+          class="flex justify-center mt-[7rem] text-[1.1rem] text-violet-600 font-medium"
+          id="pricing"
+        >
+          Pricing
+        </p>
+        <h1 class="flex justify-center text-[3.5rem] font-medium">
+          Pricing that grows with you
+        </h1>
+        <p
+          class="flex justify-center text-[1.8rem] text-gray-400 mt-[1.8rem]"
+          id="p2"
+        >
+          Choose an affordable plan that's packed with the best features for
+        </p>
+        <p class="flex justify-center text-[1.8rem] text-gray-400 mb-[1.8rem]">
+          engaging your audience, creating cusomer loyalty, and driving sales.
+        </p>
+      </section>
+
+      <section class="container-preco">
+        <div id="pagina-2">
+          <div class="flex justify-center mt-[12rem]">
+            <div class="border border-gray-500 p-[3px] rounded-[25px]">
+              <button
+                class="rounded-[25px] p-[4px] text-xs bg-violet-600 text-white"
+                id="buttom-mounthly"
+              >
+                Mounthly
+              </button>
+              <button class="text-xs" id="bnt-2">Annually</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-[2rem] mt-[2rem]">
+          <div id="box" class="border w-[23rem] p-[1.2rem] rounded-[18px]">
+            <h3 class="text-[1.8rem] font-medium pt-[2rem]" id="freelancer">
+              Freelancer
+            </h3>
+            <p class="text-[1.2rem] text-gray-400 pt-[8px]" id="the-essentials">
+              The essentials to provide your best work for clients.
+            </p>
+            <div class="flex items-end pt-[18px] pb-[18px]" id="preco">
+              <h2 class="text-[2rem] font-medium">$19</h2>
+              <p class="text-[1rem] font-base">/month</p>
+            </div>
+            <button
+              class="w-[100%] border border-gray-500 p-[8px] text-violet-600 rounded-[8px] font-bold"
+            >
+              Buy plan
+            </button>
+            <ul class="flex flex-col gap-2 mt-[2rem] mb-[2rem]">
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> 5 products
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Upto 1,000
+                  subscribers
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Basic
+                  analytics
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> 48-hour
+                  support response time
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="box" class="border w-[23rem] p-[1.2rem] rounded-[18px]">
+            <div class="flex justify-between">
+              <p
+                class="text-[1.8rem] font-medium pt-[2rem] text-violet-600"
+                id="freelancer"
+              >
+                Startup
+              </p>
+              <p
+                class="flex text-xs items-center font-bold mt-[2.8rem] p-[4px] bg-[#bbbad8] h-[2rem] text-violet-600 rounded-[15px]"
+              >
+                Most popular
+              </p>
+            </div>
+            <p class="text-[1.2rem] text-gray-400 pt-[8px]" id="the-essentials">
+              A plan thatscales with your rapidly growing business
+            </p>
+            <div class="flex items-end pt-[18px] pb-[18px]" id="preco">
+              <h2 class="text-[2rem] font-medium">$29</h2>
+              <p class="text-[1rem] font-base">/month</p>
+            </div>
+            <button
+              class="bg-violet-600 w-[100%] border border-gray-500 p-[8px] text-white rounded-[8px] font-bold"
+            >
+              Buy plan
+            </button>
+            <ul class="flex flex-col gap-2 mt-[2rem] mb-[2rem]">
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> 25 products
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Upto 10,000
+                  subscribers
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Advanced
+                  analytics
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> 24-hour
+                  support response time
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Marketing
+                  automations
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="box" class="border w-[23rem] p-[1.2rem] rounded-[18px]">
+            <h3 class="text-[1.8rem] font-medium pt-[2rem]" id="freelancer">
+              Enterprise
+            </h3>
+            <p class="text-[1.2rem] text-gray-400 pt-[8px]" id="the-essentials">
+              Dedicated support and infrastructure for your company
+            </p>
+            <div class="flex items-end pt-[18px] pb-[18px]" id="preco">
+              <h2 class="text-[2rem] font-medium">$59</h2>
+              <p class="text-[1rem] font-base">/month</p>
+            </div>
+            <button
+              class="w-[100%] border border-gray-500 p-[8px] text-violet-600 rounded-[8px] font-bold"
+            >
+              Buy plan
+            </button>
+            <ul class="flex flex-col gap-2 mt-[2rem] mb-[2rem]">
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Unlimited
+                  products
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Unlimited
+                  subscribers
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Advanced
+                  analytics
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> 1-hour,
+                  dedicated support response time
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Marketing
+                  automations
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-solid fa-check text-violet-600"></i> Custom
+                  reporting tools
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-center [8rem]">
+        <div class="flex flex-col justify-center mt-[8rem] w-[68%] gap-4">
+          <h1 class="text-[3.5rem] mb-[20px]">Frequently asked questions</h1>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            What's the best thing abount switzerland?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+          <div class="border w-[100%] border-gray-300" id="linha"></div>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            How do you male holy water?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+          <div class="border w-[100%] border-gray-300" id="linha"></div>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            What do you call someone with no body and no nose?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+          <div class="border w-[100%] border-gray-300" id="linha"></div>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            Why do you never see elephants hiding in trees?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+          <div class="border w-[100%] border-gray-300" id="linha"></div>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            Why can't you hear a pterodactyl go to the bathroom?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+          <div class="border w-[100%] border-gray-300" id="linha"></div>
+          <p class="text-[1.4rem] flex items-center justify-between">
+            Why did invisiblo man turn down the job offer?<i
+              class="fa-solid fa-plus text-[1rem]"
+            ></i>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="mt-[20rem] p-[12px]">
+        <footer>
+          <div class="flex justify-between ml-[1rem] mr-[1rem]">
+            <div class="text-violet-600 text-4xl">
+              <i class="fa-solid fa-meteor"></i>
+            </div>
+            <div class="flex gap-15">
+              <ul class="flex flex-col p-[15px] text-[1rem] gap-2">
+                <li><p class="font-bold">Solutions</p></li>
+                <li><p class="text-gray-500">Marketing</p></li>
+                <li><p class="text-gray-500">Analitycs</p></li>
+                <li><p class="text-gray-500">Automation</p></li>
+                <li><p class="text-gray-500">Commerce</p></li>
+                <li><p class="text-gray-500">Insights</p></li>
+              </ul>
+              <ul class="flex flex-col p-[15px] text-[1rem] gap-2">
+                <li><p class="font-bold">Suport</p></li>
+                <li><p class="text-gray-500">Submit ticket</p></li>
+                <li><p class="text-gray-500">Documento</p></li>
+                <li><p class="text-gray-500">Guides</p></li>
+              </ul>
+              <ul class="flex flex-col p-[15px] text-[1rem] gap-2">
+                <li><p class="font-bold">Company</p></li>
+                <li><p class="text-gray-500">About</p></li>
+                <li><p class="text-gray-500">Blog</p></li>
+                <li><p class="text-gray-500">Jobs</p></li>
+                <li><p class="text-gray-500">Press</p></li>
+              </ul>
+              <ul class="flex flex-col p-[15px] text-[1rem] gap-2">
+                <li><p class="font-bold">Legal</p></li>
+                <li><p class="text-gray-500">Term os service</p></li>
+                <li><p class="text-gray-500">Privacy policy</p></li>
+                <li><p class="text-gray-500">License</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border border-gray-300"></div>
+          <div class="flex items-center justify-between p-[12px]">
+            <div>
+              <h3 class="font-bold">Subscribe to our newsletter</h3>
+              <p>
+                The last news, articles, and resources, sent to your inbox
+                weekly.
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                class="border p-[1px] border-gray-300 rounded-[8px]"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+              <button
+                class="bg-violet-600 text-white text-[12px] pl-[5px] pr-[5px] rounded-[8px] font-bold"
+                id="bnt-subs"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="border border-gray-300"></div>
+          <div class="flex justify-between p-[8px]">
+            <div>
+              <p class="text-1xl">
+                <i id="copy" class="fa-regular fa-copyright text-xs"></i> 2024
+                Your Company, Inc. All rights reserved
+              </p>
+            </div>
+            <div class="text-gray-600 text-[20px]">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </footer>
+  </body>
+</html>
